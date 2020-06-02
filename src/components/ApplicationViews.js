@@ -1,7 +1,7 @@
 import { Route } from "react-router-dom";
 import React from "react";
 import Home from "./home/Home";
-import BeerCard from "./beer/BeerCard";
+import BeerList from "./beer/BeerList";
 
 const ApplicationViews = () => {
     return (
@@ -15,9 +15,11 @@ const ApplicationViews = () => {
             />
             <Route
                 path="/beers"
-                render={props => {
-                    return <BeerCard />;
-                }}
+                // render={props => {
+                //     console.log("props app views", props)
+                //     return <BeerList />;
+                // }}
+                component={BeerList}
             />
         </>
     );
