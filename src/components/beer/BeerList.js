@@ -16,7 +16,7 @@ const BeerList = () => {
 
     const getBeers = () => {
         BeerManager.getAllBeers().then(beersFromAPI => {
-            // console.log("beers test", beersFromAPI.currentPage);
+            console.log("beers test", beersFromAPI);
             setBeerData(beersFromAPI)
         });
     };

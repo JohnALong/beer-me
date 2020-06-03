@@ -13,4 +13,8 @@ export default {
     getPaginatedBeers(page) {
         return fetch(`${proxyurl}${beerURL}&p=${page}`).then(result => result.json())
     },
+
+    getAllBreweries() {
+        return fetch(`${proxyurl}${breweryURL}`).then(result => result.json())
+    },
 }

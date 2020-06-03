@@ -2,6 +2,7 @@ import { Route } from "react-router-dom";
 import React from "react";
 import Home from "./home/Home";
 import BeerList from "./beer/BeerList";
+import BreweryList from "./brewery/BreweryList";
 
 const ApplicationViews = () => {
     return (
@@ -20,6 +21,10 @@ const ApplicationViews = () => {
                 //     return <BeerList />;
                 // }}
                 component={BeerList}
+            />
+            <Route
+                path="/breweries"
+                component={BreweryList}
             />
         </>
     );

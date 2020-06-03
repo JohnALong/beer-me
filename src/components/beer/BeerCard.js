@@ -12,6 +12,7 @@ const BeerCard = ({name, description, abv, labels}) => {
                     Name: <span className="card-beername">{name}</span>
                 </h3>
                 <p>Description: {description}</p>
+                <p>ABV: {abv}%</p>
                 <img id="beerLabel" src={contentAwareIcon} style={{ width: '64px'}} alt="Coming Soon" />
             </div>
         </div>
@@ -19,5 +20,3 @@ const BeerCard = ({name, description, abv, labels}) => {
 };
 
 export default BeerCard
-
-// "https://c1.wallpaperflare.com/preview/184/11/589/coming-soon-coming-soon-patience.jpg"
